@@ -1,0 +1,90 @@
+/* --- ARQUIVO: frontend/Dicas.css --- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}  
+
+.dicas-section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  position: relative; /* --- CORREÇÃO: Garante que o .back-link seja posicionado corretamente --- */
+}
+
+/* --- CORREÇÃO: Estilos movidos de MapaBrasil.css para cá --- */
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2.5rem;
+  color: #333;
+  text-decoration: none;
+  z-index: 1100;
+  font-weight: bold;
+}
+
+.back-link:hover {
+  color: #000;
+}
+/* --- Fim dos estilos movidos --- */
+
+.dicas-container {
+  width: 100%;
+  max-width: 1200px;
+  text-align: center;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.dicas-container h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.card h2 {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
+}
